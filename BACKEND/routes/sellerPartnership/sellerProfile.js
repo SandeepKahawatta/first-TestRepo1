@@ -3,7 +3,7 @@ const router = express.Router();
 const multer = require('multer'); // For handling file uploads
 const path = require('path');
 const fs = require('fs');
-const bcrypt = require('bcrypt'); // For password hashing
+const bcrypt = require('bcryptjs'); // For password hashing
 const Seller = require('../../models/sellerPartnership/Seller');
 const { verifySellerToOther } = require('../../utils/veryfyToken');
 
