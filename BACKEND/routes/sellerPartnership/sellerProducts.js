@@ -92,7 +92,7 @@ router
       const product = await Product.findById(productId);
 
       const calculatedPrice =
-  ((100 - sellerProduct.price_margin) * product.price) /
+  ((100 - sellerProduct.price_margine) * product.price) /
   100;
 
       //merge product details
