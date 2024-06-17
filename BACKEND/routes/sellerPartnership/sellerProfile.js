@@ -85,6 +85,7 @@ router.route('/profile/:sellerId').get( async (req, res) => {
       tax_id: seller.tax_id,
     };
 
+    console.log(sellerData);
     // Send the modified data as JSON response
     res.status(200).json(sellerData);
   } catch (err) {
