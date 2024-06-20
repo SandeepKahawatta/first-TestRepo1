@@ -18,49 +18,49 @@ const corsOptions = {
   app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
-const StaffRouter = require("./routes/staff/staff.js");
-const ManagerRouter = require("./routes/manager/manager.js");
-const ManagerDashboardRouter = require("./routes/manager/managerDashboard.js");
+const StaffRouter = require("./BACKEND/routes/staff/staff.js");
+const ManagerRouter = require("./BACKEND/routes/manager/manager.js");
+const ManagerDashboardRouter = require("./BACKEND/routes/manager/managerDashboard.js");
 
-const ConsultAppointmentsRouter = require("./routes/consultation/consultAppointments.js");
-const RefundRouter = require("./routes/consultation/refunds.js");
-const AvailabilityRouter = require("./routes/consultation/availabilities.js");
-const SpecialistRouter = require("./routes/consultation/specialists.js");
-const CenterRouter = require("./routes/consultation/centers.js");
-const SpecialistNotificationsRouter = require("./routes/consultation/specialistNotifications.js");
+const ConsultAppointmentsRouter = require("./BACKEND/routes/consultation/consultAppointments.js");
+const RefundRouter = require("./BACKEND/routes/consultation/refunds.js");
+const AvailabilityRouter = require("./BACKEND/routes/consultation/availabilities.js");
+const SpecialistRouter = require("./BACKEND/routes/consultation/specialists.js");
+const CenterRouter = require("./BACKEND/routes/consultation/centers.js");
+const SpecialistNotificationsRouter = require("./BACKEND/routes/consultation/specialistNotifications.js");
 
-const customerRouter = require( "./routes/user/customer.js" );
+const customerRouter = require( "./BACKEND/routes/user/customer.js" );
 
-const sellerRouter = require( "./routes/sellerPartnership/seller.js" );
-const sellerPartnershipRequestRouter = require( "./routes/sellerPartnership/sellerPartnershipRequest.js" );
-const sellerProducts = require( "./routes/sellerPartnership/sellerProducts.js" )
-const sellerBag = require( "./routes/sellerPartnership/sellerBag.js" );
-const sellerOrder = require( "./routes/sellerPartnership/sellerOrders.js" );
-const sellerNotification = require( "./routes/sellerPartnership/sellerNotification.js" );
-const sellerAppointments = require( "./routes/sellerPartnership/sellerAppointments.js" );
-const SellerHome = require( "./routes/sellerPartnership/sellerHome.js" );
-const SellerProfile = require( "./routes/sellerPartnership/sellerProfile.js" );
+const sellerRouter = require( "./BACKEND/routes/sellerPartnership/seller.js" );
+const sellerPartnershipRequestRouter = require( "./BACKEND/routes/sellerPartnership/sellerPartnershipRequest.js" );
+const sellerProducts = require( "./BACKEND/routes/sellerPartnership/sellerProducts.js" )
+const sellerBag = require( "./BACKEND/routes/sellerPartnership/sellerBag.js" );
+const sellerOrder = require( "./BACKEND/routes/sellerPartnership/sellerOrders.js" );
+const sellerNotification = require( "./BACKEND/routes/sellerPartnership/sellerNotification.js" );
+const sellerAppointments = require( "./BACKEND/routes/sellerPartnership/sellerAppointments.js" );
+const SellerHome = require( "./BACKEND/routes/sellerPartnership/sellerHome.js" );
+const SellerProfile = require( "./BACKEND/routes/sellerPartnership/sellerProfile.js" );
 
-const productRouter = require("./routes/inventory/inventoryManagers.js");
-const approvalProcessRouter = require("./routes/inventory/approvalProcess.js");
+const productRouter = require("./BACKEND/routes/inventory/inventoryManagers.js");
+const approvalProcessRouter = require("./BACKEND/routes/inventory/approvalProcess.js");
 
-const cartRouter =require("./routes/order/Cart.js")
+const cartRouter =require("./BACKEND/routes/order/Cart.js")
 
-const customizeGiftPackageRouter = require("./routes/GiftPackage/customizeGiftPackage.js");
-const defaultGiftpackageRouter = require("./routes/GiftPackage/defaultGiftpackage.js");
-const giftPackageOrderRouter = require("./routes/GiftPackage/giftPackageOrder.js");
+const customizeGiftPackageRouter = require("./BACKEND/routes/GiftPackage/customizeGiftPackage.js");
+const defaultGiftpackageRouter = require("./BACKEND/routes/GiftPackage/defaultGiftpackage.js");
+const giftPackageOrderRouter = require("./BACKEND/routes/GiftPackage/giftPackageOrder.js");
 
-const feedbackRouter = require("./routes/Feedback&complaints/feedbacks.js");
-const complaintsRouter = require("./routes/Feedback&complaints/complaintses.js");
+const feedbackRouter = require("./BACKEND/routes/Feedback&complaints/feedbacks.js");
+const complaintsRouter = require("./BACKEND/routes/Feedback&complaints/complaintses.js");
 
-const packageRoutes = require("./routes/HolidayPackage/package.js");
-const serviceRoutes = require("./routes/HolidayPackage/service.js");
-const bookingRoutes = require("./routes/HolidayPackage/booking.js");
-const FeedbackGiftPackageRouter = require("./routes/Feedback&complaints/feedbacksGiftPackages.js");
+const packageRoutes = require("./BACKEND/routes/HolidayPackage/package.js");
+const serviceRoutes = require("./BACKEND/routes/HolidayPackage/service.js");
+const bookingRoutes = require("./BACKEND/routes/HolidayPackage/booking.js");
+const FeedbackGiftPackageRouter = require("./BACKEND/routes/Feedback&complaints/feedbacksGiftPackages.js");
 
-const orderRouter = require( "./routes/order/orders.js" );
+const orderRouter = require( "./BACKEND/routes/order/orders.js" );
 
-const authRouter = require( "./routes/auth.js" );
+const authRouter = require( "./BACKEND/routes/auth.js" );
 
 const cookieParser = require("cookie-parser");
 
